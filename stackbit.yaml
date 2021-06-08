@@ -1,0 +1,352 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  page_1:
+    type: page
+    label: Page 1
+    match: '*'
+    exclude:
+      - links.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: object
+        name: header
+        label: Header
+        fields:
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: text
+            label: Text
+          - type: object
+            name: action
+            label: Action
+            fields:
+              - type: string
+                name: label
+                label: Label
+              - type: string
+                name: url
+                label: Url
+      - type: list
+        name: sections
+        label: Sections
+        items:
+          type: model
+          models:
+            - object_qp94nko5mq
+            - object_cf2vs3bbbi
+            - object_q76r93eh1a
+  page_2:
+    type: page
+    label: Page 2
+    match: '*'
+    exclude:
+      - index.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: background_image
+        label: Background Image
+      - type: object
+        name: menus
+        label: Menus
+        fields:
+          - type: object
+            name: header
+            label: Header
+            fields:
+              - type: string
+                name: title
+                label: Title
+              - type: number
+                name: weight
+                label: Weight
+                subtype: int
+      - type: list
+        name: sections
+        label: Sections
+        items:
+          type: model
+          models:
+            - object_n9piupxpei
+            - object_ls0emd8ai3
+  footer:
+    type: data
+    label: Footer
+    file: footer.yml
+    fields:
+      - type: string
+        name: copyright
+        label: Copyright
+      - type: list
+        name: links
+        label: Links
+        items:
+          type: object
+          fields:
+            - type: string
+              name: text
+              label: Text
+            - type: string
+              name: url
+              label: Url
+            - type: boolean
+              name: new_window
+              label: New Window
+  menus:
+    type: data
+    label: Menus
+    file: menus.yml
+    fields:
+      - type: list
+        name: header
+        label: Header
+        items:
+          type: object
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: url
+              label: Url
+  object_mzvs84dzp2:
+    type: object
+    label: Object 1
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: url
+        label: Url
+      - type: string
+        name: class
+        label: Class
+  object_9p3gd0roa5:
+    type: object
+    label: Object 2
+    fields:
+      - type: image
+        name: image
+        label: Image
+      - type: markdown
+        name: title
+        label: Title
+      - type: string
+        name: text
+        label: Text
+  object_ji54xqezck:
+    type: object
+    label: Object 3
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: icon
+        label: Icon
+      - type: string
+        name: icon_type
+        label: Icon Type
+      - type: string
+        name: url
+        label: Url
+  object_meu0ziuwjd:
+    type: object
+    label: Object 4
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: url
+        label: Url
+      - type: string
+        name: class
+        label: Class
+  object_qp94nko5mq:
+    type: object
+    label: Object 5
+    fields:
+      - type: string
+        name: type
+        label: Type
+      - type: string
+        name: section_id
+        label: Section Id
+      - type: string
+        name: background_style
+        label: Background Style
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: text
+        label: Text
+      - type: list
+        name: actions
+        label: Actions
+        items:
+          type: model
+          models:
+            - object_mzvs84dzp2
+            - object_9p3gd0roa5
+            - object_ji54xqezck
+            - object_meu0ziuwjd
+      - type: image
+        name: last_image
+        label: Last Image
+      - type: list
+        name: members
+        label: Members
+        items:
+          type: object
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: text
+              label: Text
+            - type: image
+              name: image
+              label: Image
+            - type: string
+              name: url
+              label: Url
+  object_cf2vs3bbbi:
+    type: object
+    label: Object 6
+    fields:
+      - type: string
+        name: type
+        label: Type
+      - type: string
+        name: section_id
+        label: Section Id
+      - type: string
+        name: title
+        label: Title
+      - type: list
+        name: services
+        label: Services
+        items:
+          type: object
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: text
+              label: Text
+            - type: string
+              name: icon
+              label: Icon
+            - type: string
+              name: url
+              label: Url
+  object_q76r93eh1a:
+    type: object
+    label: Object 7
+    fields:
+      - type: string
+        name: type
+        label: Type
+      - type: list
+        name: projects
+        label: Projects
+        items:
+          type: object
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: text
+              label: Text
+            - type: image
+              name: icon
+              label: Icon
+            - type: string
+              name: url
+              label: Url
+  object_n9piupxpei:
+    type: object
+    label: Object 8
+    fields:
+      - type: string
+        name: type
+        label: Type
+      - type: string
+        name: section_id
+        label: Section Id
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: map
+        label: Map
+      - type: object
+        name: address
+        label: Address
+        fields:
+          - type: string
+            name: title
+            label: Title
+          - type: markdown
+            name: text
+            label: Text
+      - type: object
+        name: phone
+        label: Phone
+        fields:
+          - type: string
+            name: title
+            label: Title
+          - type: markdown
+            name: text
+            label: Text
+  object_ls0emd8ai3:
+    type: object
+    label: Object 9
+    fields:
+      - type: string
+        name: type
+        label: Type
+      - type: string
+        name: section_id
+        label: Section Id
+      - type: string
+        name: title
+        label: Title
+      - type: list
+        name: actions
+        label: Actions
+        items:
+          type: object
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: class
+              label: Class
+            - type: string
+              name: url
+              label: Url
+      - type: markdown
+        name: text
+        label: Text
