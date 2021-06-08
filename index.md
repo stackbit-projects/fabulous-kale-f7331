@@ -2,9 +2,7 @@
 layout: home
 header:
   title: DigiLoger - En Innovativ Go-basert Mikroservice
-  text: >
-    Start Bootstrap can help you build better websites using the Bootstrap
-    framework! Just download a theme and start customizing, no strings attached!
+  text: I samarbeid med Digimaker AS
   action:
     label: Find Out More
     url: '#about'
