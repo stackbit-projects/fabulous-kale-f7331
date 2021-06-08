@@ -1,7 +1,7 @@
 ---
 layout: home
 header:
-  title: DigiLoger - En Innovativ Go-basert Mikroservice
+  title: DigiLoger - En InnovativGo-basert Mikroservice
   text: I samarbeid med Digimaker AS
   action:
     label: Find Out More
